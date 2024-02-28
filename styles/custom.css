@@ -1,0 +1,99 @@
+body {
+  background-color: #ccc;
+}
+
+.navbar-brand {
+  color: red;
+}
+
+h2.hello {
+  margin-top: 5%;
+}
+
+
+.mypath {
+  width: 300px;
+  --mypath-radius: 31px;
+  --mypath-border: 2px dashed;
+}
+
+.mypath>div {
+
+  border-top: var(--mypath-border);
+  border-color: #000 !important;
+  margin: 0;
+  padding: var(--mypath-radius);
+}
+
+.mypath>div:nth-child(even) {
+  border-left: var(--mypath-border);
+  border-top-left-radius: var(--mypath-radius);
+  border-bottom-left-radius: var(--mypath-radius);
+  margin-right: var(--mypath-radius);
+  padding-right: 0;
+}
+
+.mypath>div:nth-child(odd) {
+  border-right: var(--mypath-border);
+  border-top-right-radius: var(--mypath-radius);
+  border-bottom-right-radius: var(--mypath-radius);
+  margin-left: var(--mypath-radius);
+  padding-left: 0;
+}
+
+.mypath>div:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.mypath>div:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.process_row {
+  margin: 3%;
+}
+
+.contact_top {
+  margin-bottom: 2%;
+}
+
+.contact-form-peter {
+  padding-top: 3%;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact_button {
+  margin-bottom: 2%;
+}
+
+.contact_button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.card_height {
+  min-height: 95%;
+}
+
+.accordion_heading{
+  margin-bottom:3%;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgb(182, 177, 177);
+  color:black;
+}
+
