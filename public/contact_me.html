@@ -42,37 +42,43 @@
         <div class="row bg-dark text-white contact_top">
             <div class="col-6 d-flex justify-content-center  m-0 p-0">
                 <div class="col-8 img-responsive">
-                    <form id="contact_form" name="contact_form" method="post" class="mb-4 contact-form-peter">
+                    <form id="contactForm" name="contactForm" class="mb-4 contact-form-peter">
                         <div class="mb-4 row">
                             <div class="col">
                                 <label>First Name</label>
-                                <input type="text" required maxlength="50" class="form-control" id="first_name"
-                                    name="first_name">
+                                <input type="text" required maxlength="50" class="form-control" id="firstName"
+                                    name="firstName">
                             </div>
                             <div class="col">
                                 <label>Last Name</label>
-                                <input type="text" required maxlength="50" class="form-control" id="last_name"
-                                    name="last_name">
+                                <input type="text" required maxlength="50" class="form-control" id="lastName"
+                                    name="lastName">
                             </div>
                         </div>
                         <div class="mb-4 row">
                             <div class="col">
                                 <label for="email_addr">Email address</label>
-                                <input type="email" required maxlength="50" class="form-control" id="email_addr"
-                                    name="email" placeholder="name@example.com">
+                                <input type="email" required maxlength="50" class="form-control" id="email" name="email"
+                                    placeholder="name@example.com">
                             </div>
                             <div class="col">
                                 <label for="phone_input">Phone</label>
-                                <input type="tel" required maxlength="50" class="form-control" id="phone_input"
-                                    name="Phone" placeholder="Phone">
+                                <input type="tel" required maxlength="50" class="form-control" id="phoneNumber"
+                                    name="phoneNumber" placeholder="Phone">
                             </div>
                         </div>
                         <div class="mb-2">
                             <label for="message">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                            <textarea required maxlength="500" class="form-control" id="message" name="message"
+                                rows="5"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary px-4 btn-lg bg-info-subtle text-black">Send</button>
+                        <button type="submit" id="submit"
+                            class="btn btn-primary px-4 btn-lg bg-info-subtle text-black">Send</button>
                     </form>
+                    <p>
+                        <small class="text-muted" id="sentAlert">
+                            
+                        </small></p>
                 </div>
             </div>
             <div class="col-6  m-0 p-0 contact-map">
@@ -86,11 +92,15 @@
         <div class="row d-flex justify-content-center bg-dark">
             <p class="text-white pt-2 text-center">Peter.W &copy;2024</p>
         </div>
-        
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+    <script src="./scripts/config.js"></script>
+    <script src="./scripts/custom.js"></script>
 </body>
 
 </html>
